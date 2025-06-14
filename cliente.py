@@ -1,4 +1,3 @@
-
 import socket
 
 HOST = '127.0.0.1'  # Endereço IP do servidor
