@@ -12,7 +12,7 @@ Estabelecer comunicação entre dois processos distintos (cliente e servidor), p
 
 ### Instruções:
 * Importe o módulo socket: Ambos os programas precisam importar a biblioteca nativa socket.
-	import socket
+> import socket
 
 ### Servidor:
 
