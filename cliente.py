@@ -1,7 +1,7 @@
 import socket
 
-HOST = '127.0.0.1'  # Endereço IP do servidor
-PORT = 65432        # Porta do servidor
+HOST = '192.168.0.12'  # Endereço IP do servidor
+PORT = 61840        # Porta do servidor
 
 # Criar socket TCP
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
