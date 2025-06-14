@@ -11,6 +11,13 @@
 Estabelecer comunicação entre dois processos distintos (cliente e servidor), podendo estar na mesma máquina ou em máquinas diferentes conectadas em rede, usando sockets TCP.
 
 ### Instruções:
+
+* No prompt de comando, verifique o endereço de IP. O endereço Ipv4 é o endereço local da sua máquina.
+>ipconfig
+
+* Além disso, verifique as portas disponíveis.
+> netstat -an
+
 * Importe o módulo socket: Ambos os programas precisam importar a biblioteca nativa socket.
 > import socket
 
@@ -22,7 +29,7 @@ Estabelecer comunicação entre dois processos distintos (cliente e servidor), p
 > socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 * Associe o socket a um endereço IP e porta
-> s.bind(('127.0.0.1', 65432))
+> s.bind(('192.168.0.12', 61840))
 
 * Use o método listen para colocar um socket no modo de escuta, permitindo que ele receba conexões de entrada.
 > s.listen()
@@ -45,7 +52,7 @@ Estabelecer comunicação entre dois processos distintos (cliente e servidor), p
 > socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 * Use o método connect para conectar ao servidor.
-> s.connect(('127.0.0.1', 65432))
+> s.connect(('192.168.0.12', 61840))
 
 * Use o método sendall e o encode para enviar a mensagem ao servidor.
 > s.sendall(mensagem.encode())
