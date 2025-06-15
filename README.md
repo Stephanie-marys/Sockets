@@ -62,3 +62,24 @@ Estabelecer comunicação entre dois processos distintos (cliente e servidor), p
 
 * Use o método decode para converter um objeto do tipo bytes em uma string.
 > dados.decode()
+
+### Teste a comunicação:
+
+* Abra dois prompts de comando.
+
+* No primeiro, execute o servidor.
+> python servidor.py
+
+* No segundo, execute o cliente.
+> python cliente.py
+
+### Envie mensagens:
+
+* Digite mensagens no prompt do cliente.
+
+* Veja as mensagens ecoadas pelo servidor.
+
+### Encerre a comunicação:
+
+* Digite sair no prompt do cliente para encerrar o loop e fechar a conexão.
+
