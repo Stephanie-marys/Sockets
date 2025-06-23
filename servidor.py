@@ -1,6 +1,6 @@
 import socket
 
-HOST = '192.168.0.12'  # Endereço IP local (localhost)
+HOST = '192.168.0.39'  # Endereço IP local (localhost)
 PORT = 61840        # Porta que o servidor irá escutar
 
 # Criar socket TCP
